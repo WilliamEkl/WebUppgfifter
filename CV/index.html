@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>William Eklund CV</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body id = "body">
+    <div id = "container">
+        <div class = "header">
+            <h1 id = "name" ></h1>
+            <input type = "file" id = "file1" accept = "image/png image/jpeg"> <!--inputen tar endast in filer som är en png eller jpeg-->
+            <label class = "button" for = "file1" id ="profileButton" >Välj profilbild</label> 
+            <img id = "profile-pic" src = "Placeholder.png">
+        </div>
+
+        <div class="section">
+            <h2> Personlig Information</h2>
+            <ul>
+            <li id = infoEmail ></li> 
+            <li id = infoTelefon ></li>
+            <li id = infoAdress ></li>
+            <li id = infoFödd ></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Sammanfatning</h2>
+            <p> Jag är en passionerad webbutvecklare med 2 års erfarenhet av att skapa användarvänliga och snygga webbplatser. 
+                Jag har okej kunskaper inom HTML, CSS, JavaScript och Python samt erfarenhet av att arbeta med WordPress. 
+                Mitt mål är att skapa webbplatser som både är funktionella och estetiskt tilltalande. </p>
+        </div>
+
+        <div class="section">
+            <h2>Utbildning</h2>
+            <p id = "gymnasium" ></p>
+            <p id = "inrikting" ></p>
+        </div>
+            
+        <div class="section">
+            <h2>Erfarenheter</h2>
+            <p><strong>XYZ Agency, Stockholm (2021 – nuvarande arbete)</strong> </p> <!--<strong></strong> skapar fet text-->
+            <li>Ansvarig för att utveckla och underhålla kundens webbplatser med fokus på användarvänlighet och design.</li>
+            <li>Arbetar med HTML, CSS, JavaScript för att skapa responsiva och dynamiska webbplatser. </li>
+            <li>Samarbetar med designers och projektledare för att säkerställa att kundernas behov uppfylls. </li>
+        </div>
+
+        <div class="section" id = "funcionTab"></div>
+            <button class = "button" id="darkMode-btn">Dark mode</button>
+            <button class = "button" id="fontStyle-btn">Byt typsnitt</button>
+            <div class = "fontSize-btn">
+                <button class = "button" id="btnPlus" onclick = "increaseWidth()">Förstora pappret</button> <!--onclick säger att när du trycker på btnPlus startar functionen increaseWidth()-->
+                <button class = "button" id="btnMinus" onclick = "decreaseWidth()">Förminska pappret</button><!--onclick säger att när du trycker på btnMinus startar functionen decreaseWidth()-->
+            </div>
+        </div>
+    </div>
+        <script src = 'script.js'></script>
+</body>
+</html>
